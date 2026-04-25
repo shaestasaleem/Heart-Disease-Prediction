@@ -5,22 +5,12 @@
 This project predicts the presence of heart disease in patients using machine learning techniques.
 We apply multiple classification algorithms and compare their performance to identify the most accurate model.
 
-## 👥 Group Members
+## 🌐 Live App
 
-**Group # 3**
+🚀 **[Click here to open the Streamlit App](https://shaestasaleem-heart-disease-prediction.streamlit.app/)**
 
-| Name | Roll Number |
-|------|-------------|
-| Savaira Majeed | DSAI231103031 |
-| Shaesta Saleem | DSAI231103043 |
-| Mustajab Zahra | DSAI231103016 |
-| Faizan Nazik | DSAI231103023 |
-| Sarfraz Ahmad | DSAI231103048 |
-| Muhammad Gulfam | DSAI231103047 |
 
-**Instructor:** Ms. Allah Rakhi Saman
 
----
 
 ## 📁 Project Structure
 
@@ -28,7 +18,15 @@ We apply multiple classification algorithms and compare their performance to ide
 Heart-Disease-Prediction/
 │
 ├── heart.ipynb                          # Main Jupyter Notebook
-├── heart_disease_model.pkl              # Saved trained model (XGBoost)
+├── app.py                               # Streamlit Web App
+├── lr_model.pkl                         # Logistic Regression Model
+├── rf_model.pkl                         # Random Forest Model
+├── xgb_model.pkl                        # XGBoost Model (Best)
+├── heart_disease_model.pkl              # Combined trained model
+├── encoders.pkl                         # Label Encoders
+├── columns.pkl                          # Feature Columns
+├── heart_disease_uci.csv                # Dataset
+├── requirements.txt                     # Dependencies
 ├── HeartDiseasePrediction_ML ppt.pdf   # Project Presentation
 └── README.md                            # Project Documentation
 ```
@@ -45,16 +43,17 @@ Heart-Disease-Prediction/
 6. **Model Training** — Three models trained and compared
 7. **Model Evaluation** — Confusion Matrix + Classification Report
 8. **Save Model** — Best model saved as `.pkl` file
+9. **Web App** — Deployed on Streamlit
 
 ---
 
 ## 🤖 Models Used
 
-| Model | Description |
-|-------|-------------|
-| Logistic Regression | Baseline linear model |
-| Random Forest | Ensemble tree-based model |
-| XGBoost ✅ | Best performing model |
+| Model | Accuracy |
+|-------|----------|
+| Logistic Regression | 78.8% |
+| Random Forest | 83.7% |
+| XGBoost ✅ | 85.9% |
 
 ---
 
@@ -68,6 +67,7 @@ XGBoost achieved the highest accuracy among all three models for binary classifi
 
 - Python 3
 - Jupyter Notebook
+- Streamlit
 - pandas, numpy
 - scikit-learn
 - XGBoost
@@ -79,21 +79,27 @@ XGBoost achieved the highest accuracy among all three models for binary classifi
 ## 📊 Dataset
 
 **Heart Disease UCI Dataset**
-- 🔗 https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data
+- 🔗 [Download Dataset from Kaggle](https://www.kaggle.com/datasets/redwankarimsony/heart-disease-uci)
 - Binary target: `1` = Heart Disease Present, `0` = Healthy
 - Features include age, sex, chest pain type, blood pressure, cholesterol, and more
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run Locally
 
-1. Clone the repository
+1. Clone the repository:
+   ```
+   git clone https://github.com/shaestasaleem/Heart-Disease-Prediction.git
+   ```
 2. Install dependencies:
    ```
-   pip install pandas numpy scikit-learn xgboost matplotlib seaborn joblib
+   pip install -r requirements.txt
    ```
-3. Open `heart.ipynb` in Jupyter Notebook
-4. Run all cells
+3. Run the Streamlit app:
+   ```
+   streamlit run app.py
+   ```
+4. Or open `heart.ipynb` in Jupyter Notebook and run all cells
 
 ---
 
