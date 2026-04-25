@@ -79,7 +79,7 @@ XGBoost achieved the highest accuracy among all three models for binary classifi
 ## 📊 Dataset
 
 **Heart Disease UCI Dataset**
-- 🔗 [Download Dataset from Kaggle](https://www.kaggle.com/datasets/redwankarimsony/heart-disease-uci)
+- 🔗 https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data
 - Binary target: `1` = Heart Disease Present, `0` = Healthy
 - Features include age, sex, chest pain type, blood pressure, cholesterol, and more
 
