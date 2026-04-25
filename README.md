@@ -65,15 +65,14 @@ XGBoost achieved the highest accuracy among all three models for binary classifi
 
 ## 🛠️ Technologies Used
 
-- Python 3
-- Jupyter Notebook
-- Streamlit
-- pandas, numpy
-- scikit-learn
-- XGBoost
-- matplotlib, seaborn
-- joblib
-
+streamlit
+pandas
+numpy
+scikit-learn
+xgboost
+matplotlib
+seaborn
+joblib
 ---
 
 ## 📊 Dataset
