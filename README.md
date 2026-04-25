@@ -7,7 +7,7 @@ We apply multiple classification algorithms and compare their performance to ide
 
 ## 🌐 Live App
 
-🚀 **[Click here to open the Streamlit App](https://shaestasaleem-heart-disease-prediction.streamlit.app/)**
+🚀 **[Click here to open the Streamlit App] https://heart-disease-prediction-ad6ssbzfoudbjv2vpdxvvy.streamlit.app/**
 
 
 
